@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rizer Multimarcas</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial, sans-serif; background-color: #f0f2f5; color: #333; }
+    header { background-color: #2e7d32; color: white; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 28px; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { text-align:center; padding:50px 20px; background-image:url('hero.jpg'); background-size:cover; color:white; }
+    .hero h2 { font-size:36px; margin-bottom:10px; }
+    .products { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 20px; }
+    .card { background:white; border-radius:12px; padding:20px; width:300px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { max-width:100%; border-radius:8px; margin-bottom:15px; }
+    .card h3 { font-size:20px; margin-bottom:10px; }
+    .card p { font-size:14px; color:#555; margin-bottom:15px; }
+    .card h4 { font-size:18px; color:#2e7d32; margin-bottom:15px; }
+    .card button { background:#2e7d32; color:white; padding:12px 20px; border:none; border-radius:8px; font-size:16px; cursor:pointer; transition:0.3s; }
+    .card button:hover { background:#256728; }
+    footer { background-color:#2e7d32; color:white; text-align:center; padding:20px; }
+    footer a { color:white; margin:0 10px; text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Rizer Multimarcas</h1>
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Bem-vindo à Rizer Multimarcas</h2>
+  <p>Qualidade e estilo em cada produto!</p>
+</section>
+
+<section id="produtos" class="products">
+  <!-- Produto 1 -->
+  <div class="card">
+    <img src="produto1.jpg" alt="Camiseta Rizer">
+    <h3>Camiseta Rizer</h3>
+    <p>Camiseta exclusiva, algodão premium, disponível em todos os tamanhos.</p>
+    <h4>R$ 49,90</h4>
+    <button onclick="comprar('https://mpago.la/1jD8GtK')">Comprar Agora</button>
+  </div>
+
+  <!-- Produto 2 -->
+  <div class="card">
+    <img src="produto2.jpg" alt="Boné Rizer">
+    <h3>Boné Rizer</h3>
+    <p>Boné estiloso da Rizer Multimarcas, ajuste confortável.</p>
+    <h4>R$ 39,90</h4>
+    <button onclick="comprar('https://mpago.la/1jD8GtK')">Comprar Agora</button>
+  </div>
+
+  <!-- Produto 3 -->
+  <div class="card">
+    <img src="produto3.jpg" alt="Moletom Rizer">
+    <h3>Moletom Rizer</h3>
+    <p>Moletom quentinho e confortável, perfeito para todas as estações.</p>
+    <h4>R$ 99,90</h4>
+    <button onclick="comprar('https://mpago.la/1jD8GtK')">Comprar Agora</button>
+  </div>
+</section>
+
+<footer id="contato">
+  <p>Rizer Multimarcas &copy; 2025</p>
+  <p>
+    <a href="#">Instagram</a> | 
+    <a href="#">WhatsApp</a> | 
+    <a href="#">Facebook</a>
+  </p>
+</footer>
+
+<script>
+  function comprar(link) {
+    window.location.href = link;
+  }
+</script>
+
+</body>
+</html>
